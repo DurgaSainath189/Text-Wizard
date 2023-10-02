@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Text-Wizard/static/css/main.abd64e84.css",
+    "main.js": "/Text-Wizard/static/js/main.70ce5284.js",
+    "static/js/787.719ec76d.chunk.js": "/Text-Wizard/static/js/787.719ec76d.chunk.js",
+    "index.html": "/Text-Wizard/index.html",
+    "main.abd64e84.css.map": "/Text-Wizard/static/css/main.abd64e84.css.map",
+    "main.70ce5284.js.map": "/Text-Wizard/static/js/main.70ce5284.js.map",
+    "787.719ec76d.chunk.js.map": "/Text-Wizard/static/js/787.719ec76d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.70ce5284.js"
+  ]
+}
