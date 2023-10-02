@@ -44,7 +44,7 @@ export default function Navbar(props) {
                 onClick={props.changeMode}
               />
               <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
-                Enable {props.mode} mode
+                Switch to {props.mode==='light'?'dark':'light'} mode
               </label>
             </div>
           <form className="d-flex" role="search">

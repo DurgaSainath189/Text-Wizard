@@ -9,21 +9,26 @@ export default function TextForm(props) {
   const handleUppercase=()=>{
     // console.log("Uppercase button is clicked")
     setText(text.toUpperCase())
+    props.showAlert("Changed To Uppercase","Success")
   }
   const handleLowercase=()=>{
     setText(text.toLowerCase())
+    props.showAlert("Changed To Lowercase","Success")
   }
   const handleCleartext=()=>{
     setText("");
+    props.showAlert("Text is cleared Successfully","Success")
   }
   const handleCopy=()=>{
     var text=document.getElementById("mytext");
     text.select();
     navigator.clipboard.writeText(text.value);
+    props.showAlert("Text Copied to the Clipboard","Success")
   }
   const handelRemoveSpaces=()=>{
     var newText=text.replace(/\s+/g, ' ').trim()
     setText(newText);
+    props.showAlert("Extra Spaces are Removed","Success")
   }
   return (
     <>
@@ -41,7 +46,7 @@ export default function TextForm(props) {
     </div>
     <div className="container my-4" style={{color:props.mode==='dark'?'white':'#111111'}}>
         <h1>Your text summary</h1>
-        <p>Number of Words : <b>{text.split(" ").length}</b></p>
+        <p>Number of Words : <b>{text.split(" ").length-1}</b></p>
         <p>Number of Characters : <b>{text.length}</b></p>
         <p>Time taken to Read : <b>{0.008*text.split(" ").length}</b> min</p>
         <h3>Preveiw</h3>
